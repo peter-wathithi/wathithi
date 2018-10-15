@@ -11,14 +11,100 @@ class student
     /**
      *
      */
-    public function getStudent ($name,$gender,$age,$row,$Column,$class)
-    {echo "STUDENT NAME:".$this->name;'<br/>';
-     echo "GENDER:".$this->gender;'<br/>';
-     echo "AGE".$this->age;'<br/>';
-     echo "ROW".$this->row;'<br/>';
-     echo "COLUMN".$this->column;'<br/>';
-     echo "CLASS".$this->class;'<br/>';
-     return $this->name.$this->gender.$this->age.$this->row.$this->column.$this->class;
+    /**
+     * @param mixed $name
+     */
+    public function setName ($name)
+    { var_dump($this);
+        $this->name=$name;
+    }
+
+    /**
+     * @param mixed $gender
+     */
+    public function setGender ($gender)
+    { var_dump($this);
+        $this->gender=$gender;
+    }
+
+    /**
+     * @param mixed $age
+     */
+    public function setAge ($age)
+    { var_dump($this);
+        $this->age=$age;
+    }
+
+    /**
+     * @param mixed $row
+     */
+    public function setRow ($row)
+    { var_dump($this);
+        $this->row=$row;
+    }
+
+    /**
+     * @param mixed $column
+     */
+    public function setColumn ($column)
+    { var_dump($this);
+        $this->column=$column;
+    }
+
+    /**
+     * @param mixed $class
+     */
+    public function setClass ($class)
+    { var_dump($this);
+        $this->class=$class;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAge ()
+    {
+        echo $this->age;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getName ()
+    {
+        echo $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClass ()
+    {
+        echo $this->class;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getColumn ()
+    {
+        echo $this->column;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRow ()
+    {
+        echo $this->row;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getGender ()
+    {
+        echo $this->gender;
     }
 }
 $student_array= [
@@ -32,13 +118,19 @@ $student_array= [
         ];
 
 
-foreach ($student_array as $value);
-{echo $student_array.'is'.$value;
-
-}
 $value= new student();
-$value ->getStudent;
-
+$value->setName('peter ');
+$value->getName();
+$value->setAge(' 19 ');
+$value->getAge();
+$value->setRow(' 12 ');
+$value->getRow();
+$value->setColumn(' 10 ');
+$value->getColumn();
+$value->setGender(' male ');
+$value->getGender();
+$value->setClass(' evening ');
+$value->getClass();
 
 
 ?>

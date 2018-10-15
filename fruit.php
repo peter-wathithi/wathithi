@@ -44,16 +44,37 @@ class fruit
     {
         $this->is_juicy=$is_juicy;
     }
-    public function getFruit ($type, $color, $price, $is_juicy)
+
+    /**
+     * @return mixed
+     */
+    public function getColour ()
     {
-        echo "FRUIT TYPE " . $this->type;
+        echo $this->colour;
+    }
 
-        echo "FRUIT COLOUR " . $this->colour;
+    /**
+     * @return mixed
+     */
+    public function getPrice ()
+    {
+        echo $this->price;
+    }
 
-        echo "PRICE " . $this->price;
+    /**
+     * @return mixed
+     */
+    public function getType ()
+    {
+        echo $this->type;
+    }
 
-        echo "IS JUICY " . $this->is_juicy;
-
+    /**
+     * @return mixed
+     */
+    public function getisJuicy ()
+    {
+        echo $this->is_juicy;
     }
 
 
@@ -66,21 +87,16 @@ $fruit=[
     ["type"=>"berries", "colour"=>"red/blackis", "price"=>"200", "is juicy"=>"true"],
 ];
 
-foreach ($fruit as $item) ;
-{
-    echo "is" . $this->colour;
-}
-
 $item=new fruit(mango);
-$item->setColour('green/yellow ');
+$item->setColour(' green/yellow ');
 $item->getColour();
-$item->setType('tropical');
+$item->setType(' tropical ');
 $item->getType();
-$item->setPrice('ksh100');
+$item->setPrice(' ksh100 ');
 $item->getPrice();
-$item->setIsJuicy('is juicy');
+$item->setIsJuicy(' is juicy ');
 $item->getIsjuicy();
-$item->getFruit();
+
 ?>
 
 
